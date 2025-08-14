@@ -68,9 +68,7 @@ export default function Hero() {
                 Ücretsiz Teklif Al
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link href="/tracking" className="btn-outline text-lg px-8 py-4">
-                Gönderi Takibi
-              </Link>
+          
             </div>
 
             {/* Features */}
