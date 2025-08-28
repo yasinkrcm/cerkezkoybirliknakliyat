@@ -3,26 +3,12 @@
 import { useState } from "react"
 import Head from "next/head"
 import Link from "next/link"
-import { useRouter } from "next/router"
-import { useAuth } from "../contexts/AuthContext"
-import { Menu, X, Truck, Phone, Mail, MapPin, User, LogOut } from "lucide-react"
+
+import { Menu, X, Truck, Phone, Mail, MapPin, MessageCircle } from "lucide-react"
 
 export default function Layout({ children, title, description }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { user, logout, isAuthenticated } = useAuth()
-  const router = useRouter()
 
-  const navigation = [
-    { name: "Ana Sayfa", href: "/" },
-    { name: "Hizmetlerimiz", href: "/services" },
-    { name: "Teklif Al", href: "/quote" },
-    { name: "Hakkımızda", href: "/about" },
-    { name: "İletişim", href: "/contact" },
-  ]
-
-  const handleLogout = async () => {
-    await logout()
-  }
 
   return (
     <>
@@ -34,137 +20,109 @@ export default function Layout({ children, title, description }) {
           name="description"
           content={
             description ||
-            "Çerkezköy ve çevresinde güvenilir evden eve nakliyat hizmeti. Profesyonel ekip, uygun fiyat, sigortalı taşımacılık."
+            "Çerkezköy Birlik Evden Eve Nakliyat, Çerkezköy ve çevresinde güvenilir evden eve nakliyat hizmeti. Profesyonel ekip, uygun fiyat, sigortalı taşımacılık."
           }
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.webp" />
       </Head>
 
       <div className="min-h-screen bg-white">
         {/* Header */}
-        <header className="bg-white shadow-sm border-b border-gray-100">
-          {/* Top Bar */}
-          <div className="bg-blue-600 text-white py-2">
+        <header className="bg-white shadow-lg border-b-4 border-[#7C0A02] sticky top-0 z-50">
+          {/* Top Bar - Contact Info */}
+          <div className="bg-gradient-to-r from-[#7C0A02] to-[#B01505] text-white py-3">
             <div className="container mx-auto px-4">
               <div className="flex flex-col sm:flex-row justify-between items-center text-sm">
-                <div className="flex items-center space-x-4 mb-2 sm:mb-0">
-                  <div className="flex items-center">
-                    <Phone className="w-4 h-4 mr-1" />
-                    <span>0282 123 45 67</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Mail className="w-4 h-4 mr-1" />
-                    <span>info@cerkezkoynamkliyat.com</span>
-                  </div>
+                <div className="flex items-center space-x-6 mb-2 sm:mb-0">
+                  <a 
+                    href="tel:+902827264886" 
+                    className="flex items-center hover:text-blue-200 transition-colors duration-200 group"
+                  >
+                    <Phone className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
+                    <span className="font-semibold">(0282) 726 48 86</span>
+                  </a>
+                  <a 
+                    href="https://wa.me/905443298983" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center hover:text-green-300 transition-colors duration-200 group"
+                  >
+                    <MessageCircle className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
+                    <span className="font-semibold">0544 329 89 83</span>
+                  </a>
                 </div>
                 <div className="flex items-center">
-                  <MapPin className="w-4 h-4 mr-1" />
-                  <span>Çerkezköy, Tekirdağ</span>
+                  <MapPin className="w-4 h-4 mr-2" />
+                  <span className="font-medium">Çerkezköy, Tekirdağ</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Main Navigation */}
+          {/* Main Navigation - Simplified */}
           <nav className="container mx-auto px-4 py-4">
             <div className="flex justify-between items-center">
               {/* Logo */}
-              <Link href="/" className="flex items-center space-x-3">
-                <div className="bg-blue-600 p-2 rounded-lg">
+              <Link href="/" className="flex items-center space-x-3 group">
+                <div className="bg-[#7C0A02] p-3 rounded-xl group-hover:bg-[#5A0701] transition-colors duration-200 shadow-lg">
                   <Truck className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold text-gray-900">Çerkezköy Birlik</h1>
-                  <p className="text-sm text-gray-600">Evden Eve Nakliyat</p>
+                  <h1 className="text-2xl font-bold text-gray-900 group-hover:text-[#7C0A02] transition-colors">Çerkezköy Birlik</h1>
+                  <p className="text-sm text-gray-600 font-medium">Evden Eve Nakliyat</p>
                 </div>
               </Link>
 
-              {/* Desktop Navigation */}
-              <div className="hidden lg:flex items-center space-x-8">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className={`text-gray-700 hover:text-blue-600 font-medium transition-colors ${
-                      router.pathname === item.href ? "text-blue-600" : ""
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-
-              {/* Auth & Mobile Menu */}
-              <div className="flex items-center space-x-4">
-                {/* Auth Buttons */}
-                <div className="hidden sm:flex items-center space-x-3">
-                  {isAuthenticated ? (
-                    <div className="flex items-center space-x-3">
-                      <Link href="/dashboard" className="flex items-center text-gray-700 hover:text-blue-600">
-                        <User className="w-4 h-4 mr-1" />
-                        {user?.name}
-                      </Link>
-                      <button onClick={handleLogout} className="flex items-center text-gray-700 hover:text-red-600">
-                        <LogOut className="w-4 h-4 mr-1" />
-                        Çıkış
-                      </button>
-                    </div>
-                  ) : null}
-                </div>
-
-                {/* Mobile Menu Button */}
-                <button
-                  className="lg:hidden p-2 text-gray-700 hover:text-blue-600"
-                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              {/* Desktop Contact Buttons */}
+              <div className="hidden lg:flex items-center space-x-4">
+                <a
+                  href="tel:+902827264886"
+                  className="bg-[#7C0A02] hover:bg-[#5A0701] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105 shadow-lg flex items-center"
                 >
-                  {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-                </button>
+                  <Phone className="w-4 h-4 mr-2" />
+                  (0282) 726 48 86
+                </a>
+                <a
+                  href="https://wa.me/905443298983"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#B01505] hover:bg-[#9A0F03] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105 shadow-lg flex items-center"
+                >
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  WhatsApp
+                </a>
               </div>
+
+              {/* Mobile Menu Button */}
+              <button
+                className="lg:hidden p-2 text-gray-700 hover:text-[#7C0A02] transition-colors"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
             </div>
 
-            {/* Mobile Menu */}
+            {/* Mobile Menu - Contact Focused */}
             {mobileMenuOpen && (
-              <div className="lg:hidden mt-4 py-4 border-t border-gray-100">
+              <div className="lg:hidden mt-4 py-4 border-t border-gray-100 bg-white rounded-lg shadow-lg">
                 <div className="space-y-4">
-                  {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className={`block text-gray-700 hover:text-blue-600 font-medium ${
-                        router.pathname === item.href ? "text-blue-600" : ""
-                      }`}
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-
-                  {/* Mobile Auth */}
-                  <div className="pt-4 border-t border-gray-100 space-y-3">
-                    {isAuthenticated ? (
-                      <>
-                        <Link
-                          href="/dashboard"
-                          className="flex items-center text-gray-700 hover:text-blue-600"
-                          onClick={() => setMobileMenuOpen(false)}
-                        >
-                          <User className="w-4 h-4 mr-2" />
-                          {user?.name}
-                        </Link>
-                        <button
-                          onClick={() => {
-                            handleLogout()
-                            setMobileMenuOpen(false)
-                          }}
-                          className="flex items-center text-gray-700 hover:text-red-600"
-                        >
-                          <LogOut className="w-4 h-4 mr-2" />
-                          Çıkış Yap
-                        </button>
-                      </>
-                    ) : null}
-                  </div>
+                  <a
+                    href="tel:+902827264886"
+                    className="block bg-[#7C0A02] hover:bg-[#5A0701] text-white px-4 py-3 rounded-lg font-semibold text-center transition-colors flex items-center justify-center"
+                  >
+                    <Phone className="w-4 h-4 mr-2" />
+                    (0282) 726 48 86
+                  </a>
+                  <a
+                    href="https://wa.me/905443298983"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-[#B01505] hover:bg-[#9A0F03] text-white px-4 py-3 rounded-lg font-semibold text-center transition-colors flex items-center justify-center"
+                  >
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    WhatsApp'tan Yaz
+                  </a>
                 </div>
               </div>
             )}
@@ -174,14 +132,14 @@ export default function Layout({ children, title, description }) {
         {/* Main Content */}
         <main>{children}</main>
 
-        {/* Footer */}
+        {/* Footer - Simplified */}
         <footer className="bg-gray-900 text-white">
           <div className="container mx-auto px-4 py-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Company Info */}
               <div>
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="bg-blue-600 p-2 rounded-lg">
+                  <div className="bg-[#7C0A02] p-2 rounded-lg">
                     <Truck className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -193,20 +151,6 @@ export default function Layout({ children, title, description }) {
                   2010 yılından beri Çerkezköy ve çevresinde güvenilir nakliyat hizmeti sunuyoruz. Profesyonel ekibimiz
                   ve modern araç filomuzla eşyalarınızı güvenle taşıyoruz.
                 </p>
-              </div>
-
-              {/* Quick Links */}
-              <div>
-                <h4 className="text-lg font-semibold mb-4">Hızlı Linkler</h4>
-                <ul className="space-y-2">
-                  {navigation.map((item) => (
-                    <li key={item.name}>
-                      <Link href={item.href} className="text-gray-400 hover:text-white transition-colors">
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
               </div>
 
               {/* Services */}
@@ -226,20 +170,28 @@ export default function Layout({ children, title, description }) {
               <div>
                 <h4 className="text-lg font-semibold mb-4">İletişim</h4>
                 <div className="space-y-3 text-gray-400">
-                  <div className="flex items-center">
-                    <Phone className="w-4 h-4 mr-3 text-blue-400" />
-                    <span>0282 123 45 67</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Mail className="w-4 h-4 mr-3 text-blue-400" />
-                    <span>info@cerkezkoynamkliyat.com</span>
-                  </div>
+                  <a 
+                    href="tel:+902827264886"
+                    className="flex items-center hover:text-white transition-colors"
+                  >
+                    <Phone className="w-4 h-4 mr-3 text-[#7C0A02]" />
+                    <span>(0282) 726 48 86</span>
+                  </a>
+                  <a 
+                    href="https://wa.me/905443298983"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center hover:text-white transition-colors"
+                  >
+                    <MessageCircle className="w-4 h-4 mr-3 text-[#B01505]" />
+                    <span>0544 329 89 83</span>
+                  </a>
                   <div className="flex items-start">
-                    <MapPin className="w-4 h-4 mr-3 mt-1 text-blue-400" />
+                    <MapPin className="w-4 h-4 mr-3 mt-1 text-[#7C0A02]" />
                     <span>
-                      Atatürk Mah. Cumhuriyet Cad. No:123
-                      <br />
-                      Çerkezköy/Tekirdağ
+                      Çalışkan Apartmanı, <br />
+                      Gazi Mustafa Kemalpaşa Mahallesi Kahraman Sk. no:6A, <br />
+                      59500 Çerkezköy/Tekirdağ
                     </span>
                   </div>
                 </div>
@@ -247,19 +199,8 @@ export default function Layout({ children, title, description }) {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm">© 2024 Çerkezköy Birlik Nakliyat. Tüm hakları saklıdır.</p>
-              <div className="flex space-x-6 mt-4 md:mt-0">
-                <Link href="/privacy" className="text-gray-400 hover:text-white text-sm">
-                  Gizlilik Politikası
-                </Link>
-                <Link href="/terms" className="text-gray-400 hover:text-white text-sm">
-                  Kullanım Şartları
-                </Link>
-                <Link href="/kvkk" className="text-gray-400 hover:text-white text-sm">
-                  KVKK
-                </Link>
-              </div>
+            <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+              <p className="text-gray-400 text-sm">© 2025 Çerkezköy Birlik Nakliyat. Tüm hakları saklıdır.</p>
             </div>
           </div>
         </footer>

@@ -1,4 +1,4 @@
-import { Home, Building, Package, Shield, Truck, Clock } from "lucide-react"
+import { Home, Building, Package, Shield, Truck, Clock, Phone, MessageCircle } from "lucide-react"
 
 export default function Services() {
   const services = [
@@ -106,20 +106,24 @@ export default function Services() {
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 lg:p-12 text-white">
             <h3 className="text-2xl lg:text-3xl font-bold mb-4">Hangi Hizmete İhtiyacınız Var?</h3>
             <p className="text-blue-100 mb-8 text-lg">
-              Size en uygun nakliyat çözümünü bulmak için ücretsiz teklif alın
+              Size en uygun nakliyat çözümünü bulmak için hemen iletişime geçin
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/quote"
+                href="tel:+902827264886"
                 className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-colors inline-flex items-center justify-center"
               >
-                Ücretsiz Teklif Al
+                <Phone className="w-5 h-5 mr-2" />
+                (0282) 726 48 86
               </a>
               <a
-                href="/contact"
+                href="https://wa.me/905443298983"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-8 rounded-lg transition-all inline-flex items-center justify-center"
               >
-                Bizi Arayın
+                <MessageCircle className="w-5 h-5 mr-2" />
+                WhatsApp
               </a>
             </div>
           </div>

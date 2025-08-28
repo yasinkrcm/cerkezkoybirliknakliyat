@@ -1,8 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
-import { ArrowRight, Shield, Clock, Star, Truck } from "lucide-react"
+import { ArrowRight, Shield, Clock, Star, Truck, Phone, MessageCircle } from "lucide-react"
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -15,21 +14,21 @@ export default function Hero() {
     },
     {
       icon: Clock,
-      title: "Zamanında Teslimat",
-      description: "Belirlenen sürede güvenli teslimat",
+      title: "24 Saat Hizmet",
+      description: "7/24 kesintisiz nakliyat hizmeti",
     },
     {
       icon: Star,
-      title: "14 Yıllık Tecrübe",
-      description: "2010'dan beri güvenilir hizmet",
+      title: "20+ Yorum",
+      description: "Google'da 5 yıldız değerlendirme",
     },
   ]
 
   const stats = [
-    { number: "5000+", label: "Mutlu Müşteri" },
+    { number: "5,024+", label: "Müşteri Yorumu" },
+    { number: "5", label: "Yıldız Değerlendirme" },
+    { number: "24/7", label: "Hizmet" },
     { number: "14", label: "Yıllık Tecrübe" },
-    { number: "50+", label: "Şehir" },
-    { number: "24/7", label: "Destek" },
   ]
 
   return (
@@ -64,11 +63,24 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/quote" className="btn-primary text-lg px-8 py-4 group">
-                Ücretsiz Teklif Al
+              <a 
+                href="tel:+902827264886" 
+                className="bg-green-500 hover:bg-green-600 text-white text-lg px-8 py-4 rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg group flex items-center justify-center contact-button phone-ring"
+              >
+                <Phone className="w-5 h-5 mr-2" />
+                (0282) 726 48 86
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Link>
-          
+              </a>
+              <a 
+                href="https://wa.me/905443298983" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg group flex items-center justify-center contact-button whatsapp-pulse"
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                WhatsApp
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </a>
             </div>
 
             {/* Features */}
@@ -91,7 +103,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative z-10">
               <img
-                src="/placeholder-iuslj.png"
+                src="/arac.jpg"
                 alt="Profesyonel nakliyat ekibi"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />

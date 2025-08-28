@@ -1,12 +1,12 @@
-import { Shield, Users, Clock, Award, Truck, HeadphonesIcon } from "lucide-react"
+import { Shield, Users, Clock, Award, Truck, HeadphonesIcon, Phone, MessageCircle } from "lucide-react"
 
 export default function WhyChooseUs() {
   const reasons = [
     {
       icon: Shield,
       title: "Güvenilir Hizmet",
-      description: "14 yıllık tecrübemiz ve binlerce mutlu müşterimizle güvenilirliğimizi kanıtladık.",
-      stats: "5000+ Mutlu Müşteri",
+      description: "14 yıllık tecrübemiz ve 5,024+ müşteri yorumumuzla güvenilirliğimizi kanıtladık.",
+      stats: "5,024+ Müşteri Yorumu",
     },
     {
       icon: Users,
@@ -16,15 +16,15 @@ export default function WhyChooseUs() {
     },
     {
       icon: Clock,
-      title: "Zamanında Teslimat",
-      description: "Belirlenen tarih ve saatte eşyalarınızı teslim etme garantisi.",
-      stats: "%98 Zamanında Teslimat",
+      title: "24 Saat Hizmet",
+      description: "7/24 kesintisiz nakliyat hizmeti ile her zaman yanınızdayız.",
+      stats: "24/7 Hizmet",
     },
     {
       icon: Award,
-      title: "Kalite Garantisi",
-      description: "ISO 9001 kalite belgeli hizmet anlayışımızla mükemmelliği hedefliyoruz.",
-      stats: "ISO 9001 Belgeli",
+      title: "5 Yıldız Değerlendirme",
+      description: "Google'da 5 yıldız değerlendirme ile mükemmelliği hedefliyoruz.",
+      stats: "⭐⭐⭐⭐⭐ Google",
     },
     {
       icon: Truck,
@@ -75,7 +75,7 @@ export default function WhyChooseUs() {
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Neden Çerkezköy Birlik'i Seçmelisiniz?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            14 yıllık tecrübemiz, profesyonel ekibimiz ve müşteri memnuniyeti odaklı hizmet anlayışımızla fark
+            14 yıllık tecrübemiz, 5,024+ müşteri yorumumuz ve müşteri memnuniyeti odaklı hizmet anlayışımızla fark
             yaratıyoruz.
           </p>
         </div>
@@ -113,7 +113,7 @@ export default function WhyChooseUs() {
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 lg:p-12">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Müşterilerimiz Ne Diyor?</h3>
-            <p className="text-gray-600">Binlerce mutlu müşterimizden bazı yorumlar</p>
+            <p className="text-gray-600">5,024+ müşteri yorumumuzdan bazı örnekler</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -144,9 +144,24 @@ export default function WhyChooseUs() {
           {/* CTA */}
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-6">Siz de memnun müşterilerimize katılın</p>
-            <a href="/quote" className="btn-primary text-lg px-8 py-4">
-              Ücretsiz Teklif Alın
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="tel:+902827264886" 
+                className="bg-green-500 hover:bg-green-600 text-white text-lg px-8 py-4 rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg group flex items-center justify-center contact-button phone-ring"
+              >
+                <Phone className="w-5 h-5 mr-2" />
+                (0282) 726 48 86
+              </a>
+              <a 
+                href="https://wa.me/905443298983" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg group flex items-center justify-center contact-button whatsapp-pulse"
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       </div>
