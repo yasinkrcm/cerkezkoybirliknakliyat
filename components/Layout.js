@@ -14,7 +14,7 @@ export default function Layout({ children, title, description }) {
     <>
       <Head>
         <title>
-          {title ? `${title} - Çerkezköy Birlik Nakliyat` : "Çerkezköy Birlik Nakliyat - Güvenilir Taşımacılık"}
+          {title ? `${title} - Çerkezköy Birlik Evden Eve Nakliyat` : "Çerkezköy Birlik Evden Eve Nakliyat - Güvenilir Taşımacılık"}
         </title>
         <meta
           name="description"
