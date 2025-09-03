@@ -176,7 +176,7 @@ export default function Home() {
       </Head>
       <Layout>
         {/* Hero Section */}
-        <section className="bg-white py-16 lg:py-24">
+        <section className="bg-white py-16 lg:py-24c">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
@@ -193,7 +193,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a 
                     href="tel:+902827264886" 
-                    className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
+                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
                   >
                     <Phone className="w-5 h-5 mr-2" />
                     Hemen Ara
@@ -202,7 +202,7 @@ export default function Home() {
                     href="https://wa.me/905443298983" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
+                    className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
                   >
                     <MessageCircle className="w-5 h-5 mr-2" />
                     WhatsApp
@@ -223,7 +223,7 @@ export default function Home() {
         </section>
 
         {/* Contact Banner */}
-        <section className="bg-gray-900 text-white py-8">
+        <section className="bg-gray-900 text-white py-8 color:rgb(49, 245, 0)">
           <div className="container mx-auto px-4">
             <div className="text-center">
               <h2 className="text-2xl lg:text-3xl font-bold mb-4">
@@ -235,7 +235,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a
                   href="tel:+902827264886"
-                  className="bg-white text-gray-900 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg transition-colors flex items-center"
+                  className="bg-red-600 hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   0282 726 48 86
@@ -253,7 +253,39 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+        <section className="py-20">
+          {/* Google Business Section */}
+          <div className="mb-6 bg-white text-black shadow-lg rounded-xl">
+                <h3 className="text-2xl font-bold mb-8 text-center">Google İşletmemiz</h3>
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 lg:p-8 text-center hover:bg-white/15 transition-all duration-300">
+                  <div className="max-w-3xl mx-auto">
+                    <div className="flex items-center justify-center mb-6">
+                      <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mr-4">
+                        <Star className="w-8 h-8 text-yellow-400" />
+                      </div>
+                      <h4 className="text-2xl font-bold">Çerkezköy Birlik Evden Eve Nakliyat</h4>
+                    </div>
+                    <div className="flex items-center justify-center mb-6">
+                      <span className="text-yellow-400 text-3xl mr-3">⭐⭐⭐⭐⭐</span>
+                      <span className="text-black font-bold text-xl">20+ Yorum</span>
+                    </div>
+                    <p className="text-black mb-8 text-lg leading-relaxed max-w-2xl mx-auto">
+                      Google İşletmemizi ziyaret ederek 20+ müşteri yorumumuzu okuyabilir, fotoğraflarımızı görebilir ve 
+                      doğrudan iletişime geçebilirsiniz.
+                    </p>
+                    <a
+                      href="https://share.google/V2t6zPjVaqTtrUSKN"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center bg-white text-[#7C0A02] hover:bg-gray-100 font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg text-lg"
+                    >
+                      Google İşletmemizi Ziyaret Et
+                      <ArrowRight className="w-12 h-12 ml-2" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </section>
         {/* Services Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
@@ -321,7 +353,7 @@ export default function Home() {
 
 
         {/* Contact & Addresses Section */}
-        <section id="contact" className="section-padding bg-gradient-to-br from-[#7C0A02] to-[#B01505] text-white">
+        <section id="contact" className="section-padding bg-gradient-to-br from-[#e92323] to-[#420101] text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
@@ -389,37 +421,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Google Business Section */}
-              <div className="mb-16">
-                <h3 className="text-2xl font-bold mb-8 text-center">Google İşletmemiz</h3>
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 lg:p-8 text-center hover:bg-white/15 transition-all duration-300">
-                  <div className="max-w-3xl mx-auto">
-                    <div className="flex items-center justify-center mb-6">
-                      <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mr-4">
-                        <Star className="w-8 h-8 text-yellow-400" />
-                      </div>
-                      <h4 className="text-2xl font-bold">Çerkezköy Birlik Evden Eve Nakliyat</h4>
-                    </div>
-                    <div className="flex items-center justify-center mb-6">
-                      <span className="text-yellow-400 text-3xl mr-3">⭐⭐⭐⭐⭐</span>
-                      <span className="text-white font-bold text-xl">20+ Yorum</span>
-                    </div>
-                    <p className="text-[#F5E6E5] mb-8 text-lg leading-relaxed max-w-2xl mx-auto">
-                      Google İşletmemizi ziyaret ederek 20+ müşteri yorumumuzu okuyabilir, fotoğraflarımızı görebilir ve 
-                      doğrudan iletişime geçebilirsiniz.
-                    </p>
-                    <a
-                      href="https://share.google/V2t6zPjVaqTtrUSKN"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center bg-white text-[#7C0A02] hover:bg-gray-100 font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg text-lg"
-                    >
-                      Google İşletmemizi Ziyaret Et
-                      <ArrowRight className="w-6 h-6 ml-3" />
-                    </a>
-                  </div>
-                </div>
-              </div>
+              
 
               {/* Addresses Section */}
               <div className="mb-16">
@@ -474,7 +476,7 @@ export default function Home() {
                   <p className="text-[#F5E6E5] mb-8 text-lg">Acil nakliyat ihtiyaçlarınız için 7/24 ulaşabileceğiniz özel hattımız</p>
                   <a
                     href="tel:+902827264886"
-                    className="inline-flex items-center bg-[#7C0A02] hover:bg-[#5A0701] text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg text-lg"
+                    className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg text-lg"
                   >
                     <Phone className="w-6 h-6 mr-3" />
                     (0282) 726 48 86
@@ -486,14 +488,14 @@ export default function Home() {
                   <h3 className="text-2xl font-bold mb-4">Ücretsiz Keşif ve Teklif</h3>
                   <p className="text-[#F5E6E5] mb-8 text-lg">Hemen iletişime geçin, size en uygun nakliyat çözümünü sunalım</p>
                   <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                    <a
-                      href="tel:+902827264886"
-                      className="bg-white text-[#7C0A02] hover:bg-gray-100 font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg inline-flex items-center justify-center text-lg"
-                    >
-                      <Phone className="w-5 h-5 mr-2" />
-                      Hemen Ara
-                      <ArrowRight className="w-5 h-5 ml-2" />
-                    </a>
+                                         <a
+                       href="tel:+902827264886"
+                       className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg inline-flex items-center justify-center text-lg"
+                     >
+                       <Phone className="w-5 h-5 mr-2" />
+                       Hemen Ara
+                       <ArrowRight className="w-5 h-5 ml-2" />
+                     </a>
                     <a
                       href="https://wa.me/905443298983"
                       target="_blank"

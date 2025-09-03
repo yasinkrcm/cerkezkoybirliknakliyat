@@ -23,7 +23,7 @@ export default function Layout({ children, title, description }) {
           }
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.webp" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
       <div className="min-h-screen bg-gray-50">
