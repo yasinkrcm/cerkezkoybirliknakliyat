@@ -14,13 +14,13 @@ export default function Layout({ children, title, description }) {
     <>
       <Head>
         <title>
-          {title ? `${title} - Çerkezköy Birlik Nakliyat` : "Çerkezköy Birlik Nakliyat - Güvenilir Taşımacılık"}
+          {title ? `${title} - Çerkezköy Birlik Evden Eve Nakliyat` : "Çerkezköy Birlik Evden Eve Nakliyat - Güvenilir Taşımacılık"}
         </title>
         <meta
           name="description"
           content={
             description ||
-            "Çerkezköy Birlik Nakliyat, güvenilir evden eve nakliyat hizmeti. Profesyonel ekip, uygun fiyat, sigortalı taşımacılık."
+            "Çerkezköy Birlik Evden Eve Nakliyat, güvenilir evden eve nakliyat hizmeti. Profesyonel ekip, uygun fiyat, sigortalı taşımacılık."
           }
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -67,7 +67,7 @@ export default function Layout({ children, title, description }) {
               {/* Logo */}
               <Link href="/" className="flex items-center space-x-3 group">
                 <div className="bg-white-900 p-2 rounded-lg group-hover:bg-gray-800 transition-colors">
-                  <Image src="/logo.png" alt="Çerkezköy Birlik Nakliyat" width={100} height={100} />
+                  <Image src="/logo.png" alt="Çerkezköy Birlik Evden Eve Nakliyat" width={100} height={100} />
                 </div>
                 <div>
                   <h1 className="text-xl font-bold text-gray-900">Çerkezköy Birlik</h1>
@@ -200,7 +200,7 @@ export default function Layout({ children, title, description }) {
 
             {/* Bottom Bar */}
             <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-              <p className="text-gray-400 text-sm">© 2025 Çerkezköy Birlik Nakliyat. Tüm hakları saklıdır.</p>
+              <p className="text-gray-400 text-sm">© 2025 Çerkezköy Birlik Evden Eve Nakliyat. Tüm hakları saklıdır.</p>
             </div>
           </div>
         </footer>

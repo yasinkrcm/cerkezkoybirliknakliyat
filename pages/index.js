@@ -359,7 +359,7 @@ export default function Home() {
               <div className="text-center mb-16">
                 <h2 className="text-4xl lg:text-5xl font-bold mb-6">İletişim ve Adreslerimiz</h2>
                 <p className="text-xl text-[#F5E6E5] max-w-3xl mx-auto">
-                  Çerkezköy Birlik Nakliyat'a ulaşmak için aşağıdaki iletişim bilgilerini kullanabilirsiniz.
+                  Çerkezköy Birlik Evden Eve Nakliyat'a ulaşmak için aşağıdaki iletişim bilgilerini kullanabilirsiniz.
                 </p>
               </div>
 
