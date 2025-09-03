@@ -70,7 +70,7 @@ export default function Layout({ children, title, description }) {
                   <Image src="/logo.png" alt="Çerkezköy Birlik Evden Eve Nakliyat" width={100} height={100} />
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold text-gray-900">Çerkezköy Birlik</h1>
+                  <h1 className="text-xl font-bold text-gray-900">Çerkezköy Birlik Evden Eve</h1>
                   <p className="text-sm text-gray-600">Nakliyat</p>
                 </div>
               </Link>
