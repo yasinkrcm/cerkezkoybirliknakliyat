@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Head from "next/head"
 import Link from "next/link"
+import Image from "next/image"
 
 import { Menu, X, Truck, Phone, MessageCircle, MapPin } from "lucide-react"
 
@@ -60,12 +61,13 @@ export default function Layout({ children, title, description }) {
           </div>
 
           {/* Main Navigation */}
+          
           <nav className="container mx-auto px-4 py-4">
             <div className="flex justify-between items-center">
               {/* Logo */}
               <Link href="/" className="flex items-center space-x-3 group">
-                <div className="bg-gray-900 p-2 rounded-lg group-hover:bg-gray-800 transition-colors">
-                  <Truck className="w-6 h-6 text-white" />
+                <div className="bg-white-900 p-2 rounded-lg group-hover:bg-gray-800 transition-colors">
+                  <Image src="/logo.png" alt="Çerkezköy Birlik Nakliyat" width={100} height={100} />
                 </div>
                 <div>
                   <h1 className="text-xl font-bold text-gray-900">Çerkezköy Birlik</h1>

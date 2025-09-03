@@ -213,7 +213,7 @@ export default function Home() {
               {/* Right Content - Photo */}
               <div>
                 <img
-                  src="/arac.jpg"
+                  src="/Çerkezköy Birlik.jpg"
                   alt="Profesyonel nakliyat ekibi"
                   className="w-full h-auto rounded-xl shadow-md"
                 />
