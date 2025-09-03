@@ -176,126 +176,77 @@ export default function Home() {
       </Head>
       <Layout>
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-[#F5E6E5] via-white to-[#F5E6E5] overflow-hidden">
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-20 left-10 w-32 h-32 bg-[#7C0A02] rounded-full"></div>
-            <div className="absolute bottom-20 right-10 w-24 h-24 bg-[#B01505] rounded-full"></div>
-            <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-[#9A0F03] rounded-full"></div>
-          </div>
-
-          <div className="container mx-auto px-4 py-16 lg:py-24">
+        <section className="bg-white py-16 lg:py-24">
+          <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left Content */}
               <div className="space-y-8">
-                <div className="space-y-6">
-                  <div className="inline-flex items-center bg-[#F5E6E5] text-[#7C0A02] px-4 py-2 rounded-full text-sm font-medium">
-                    <Truck className="w-4 h-4 mr-2" />
-                    Çerkezköy'ün En Güvenilir Nakliyat Firması
-                  </div>
+                <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  Eşyalarınızı Güvenle Taşıyoruz
+                </h1>
 
-                  <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                    Eşyalarınızı
-                    <span className="text-[#7C0A02] block">Güvenle Taşıyoruz</span>
-                  </h1>
-
-                  <p className="text-xl text-gray-600 leading-relaxed">
-                    14 yıllık tecrübemiz ve profesyonel ekibimizle evden eve, ofisten ofise nakliyat hizmetlerinde
-                    yanınızdayız. Sigortalı ve güvenli taşımacılık garantisi.
-                  </p>
-                </div>
+                <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
+                  14 yıllık tecrübemiz ve profesyonel ekibimizle evden eve, ofisten ofise nakliyat hizmetlerinde
+                  yanınızdayız. Sigortalı ve güvenli taşımacılık garantisi.
+                </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a 
                     href="tel:+902827264886" 
-                    className="bg-[#7C0A02] hover:bg-[#5A0701] text-white text-lg px-8 py-4 rounded-lg font-bold contact-button phone-ring group flex items-center justify-center"
+                    className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
                   >
                     <Phone className="w-5 h-5 mr-2" />
                     Hemen Ara
-                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
                   <a 
                     href="https://wa.me/905443298983" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#B01505] hover:bg-[#9A0F03] text-white text-lg px-8 py-4 rounded-lg font-bold contact-button whatsapp-pulse group flex items-center justify-center"
+                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
                   >
                     <MessageCircle className="w-5 h-5 mr-2" />
-                    WhatsApp'tan Yaz
-                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                    WhatsApp
                   </a>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">
-                  {features.map((feature, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <div className="bg-[#F5E6E5] p-2 rounded-lg flex-shrink-0">
-                        <feature.icon className="w-5 h-5 text-[#7C0A02]" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-gray-900 text-sm">{feature.title}</h3>
-                        <p className="text-gray-600 text-sm">{feature.description}</p>
-                      </div>
-                    </div>
-                  ))}
                 </div>
               </div>
 
-              <div className="relative">
-                <div className="relative z-10">
-                  <img
-                    src="/arac.jpg"
-                    alt="Profesyonel nakliyat ekibi"
-                    className="w-full h-auto rounded-2xl shadow-2xl"
-                  />
-
-                  <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-6 border border-gray-100">
-                    <div className="grid grid-cols-2 gap-4">
-                      {stats.map((stat, index) => (
-                        <div key={index} className="text-center">
-                          <div className="text-2xl font-bold text-[#7C0A02]">{stat.number}</div>
-                          <div className="text-sm text-gray-600">{stat.label}</div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="absolute -top-4 -right-4 w-full h-full bg-[#F5E6E5] rounded-2xl -z-10"></div>
+              {/* Right Content - Photo */}
+              <div>
+                <img
+                  src="/arac.jpg"
+                  alt="Profesyonel nakliyat ekibi"
+                  className="w-full h-auto rounded-xl shadow-md"
+                />
               </div>
             </div>
           </div>
-
-          <div className="absolute bottom-0 left-0 right-0">
-            <svg viewBox="0 0 1200 120" fill="none" className="w-full h-12">
-              <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" fill="white" />
-            </svg>
-          </div>
         </section>
 
-        {/* Contact Banner - Prominent */}
-        <section className="bg-gradient-to-r from-green-500 to-green-600 text-white py-8">
+        {/* Contact Banner */}
+        <section className="bg-gray-900 text-white py-8">
           <div className="container mx-auto px-4">
             <div className="text-center">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4 animate-pulse">
-                🚚 Hemen Teklif Alın! 🚚
+              <h2 className="text-2xl lg:text-3xl font-bold mb-4">
+                Hemen Teklif Alın
               </h2>
-              <p className="text-xl mb-6 text-green-100">
+              <p className="text-lg mb-6 text-gray-300">
                 Ücretsiz keşif ve teklif için hemen iletişime geçin
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a
                   href="tel:+902827264886"
-                  className="bg-white text-green-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg flex items-center text-lg"
+                  className="bg-white text-gray-900 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg transition-colors flex items-center"
                 >
-                  <Phone className="w-6 h-6 mr-3" />
+                  <Phone className="w-5 h-5 mr-2" />
                   0282 726 48 86
                 </a>
                 <a
                   href="https://wa.me/905443298983"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-green-700 hover:bg-green-800 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg flex items-center text-lg"
+                  className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center"
                 >
-                  <MessageCircle className="w-6 h-6 mr-3" />
+                  <MessageCircle className="w-5 h-5 mr-2" />
                   0544 329 89 83
                 </a>
               </div>
@@ -304,49 +255,39 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section className="section-padding bg-white">
+        <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center bg-[#F5E6E5] text-[#7C0A02] px-4 py-2 rounded-full text-sm font-medium mb-4">
-                <Package className="w-4 h-4 mr-2" />
-                Hizmetlerimiz
-              </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Size Özel Nakliyat Çözümleri</h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Her türlü nakliyat ihtiyacınız için profesyonel hizmet. Evden eve, ofisten ofise, güvenli ve uygun fiyatlı
-                taşımacılık.
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Hizmetlerimiz</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Her türlü nakliyat ihtiyacınız için profesyonel hizmet.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="group bg-white rounded-2xl shadow-lg border border-gray-100 p-4 lg:p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                  className="bg-white rounded-xl border border-gray-200 p-6"
                 >
-                  <div className="bg-[#F5E6E5] group-hover:bg-[#7C0A02] w-12 h-12 lg:w-16 lg:h-16 rounded-xl flex items-center justify-center mb-4 lg:mb-6 transition-colors duration-300">
-                    <service.icon className="w-6 h-6 lg:w-8 lg:h-8 text-[#7C0A02] group-hover:text-white transition-colors duration-300" />
+                  <div className="bg-gray-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                    <service.icon className="w-6 h-6 text-gray-600" />
                   </div>
 
-                  <div className="space-y-3 lg:space-y-4">
-                    <h3 className="text-lg lg:text-xl font-bold text-gray-900 group-hover:text-[#7C0A02] transition-colors">
-                      {service.title}
-                    </h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    {service.title}
+                  </h3>
 
-                    <p className="text-gray-600 leading-relaxed text-sm lg:text-base">{service.description}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{service.description}</p>
 
-                    <ul className="space-y-1 lg:space-y-2">
-                      {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-xs lg:text-sm text-gray-600">
-                          <div className="w-1 h-1 lg:w-1.5 lg:h-1.5 bg-[#7C0A02] rounded-full mr-2 lg:mr-3"></div>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                      <div className="pt-3 lg:pt-4 border-t border-gray-100">
-                        <a href={service.link} className="text-[#7C0A02] font-semibold text-sm lg:text-base" target="_blank">HEMEN İLETİŞİME GEÇİN</a>
-                      </div>
-                  </div>
+                  <ul className="space-y-1 mb-4">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center text-xs text-gray-500">
+                        <div className="w-1 h-1 bg-gray-400 rounded-full mr-2"></div>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
@@ -354,22 +295,22 @@ export default function Home() {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="section-padding bg-gray-50">
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Neden Bizi Seçmelisiniz?</h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Neden Bizi Seçmelisiniz?</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 14 yıllık tecrübemiz ve müşteri memnuniyeti odaklı hizmet anlayışımızla fark yaratıyoruz.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               {whyChooseUs.map((item, index) => (
-                <div key={index} className="text-center group">
-                  <div className="bg-[#7C0A02] w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div key={index} className="text-center">
+                  <div className="bg-gray-900 w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                     <item.icon className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
                   </div>
-                  <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-3 lg:mb-4">{item.title}</h3>
+                  <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-4">{item.title}</h3>
                   <p className="text-gray-600 text-sm lg:text-base">{item.description}</p>
                 </div>
               ))}
@@ -573,21 +514,19 @@ export default function Home() {
         {/* Floating Contact Button */}
         <div className="fixed bottom-6 right-6 z-50">
           <div className="flex flex-col gap-3">
-            {/* WhatsApp Button */}
             <a
               href="https://wa.me/905443298983"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 animate-bounce"
+              className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-lg transition-colors"
               title="WhatsApp'tan Mesaj Gönder"
             >
               <MessageCircle className="w-6 h-6" />
             </a>
             
-            {/* Phone Button */}
             <a
               href="tel:+902827264886"
-              className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 animate-pulse"
+              className="bg-gray-900 hover:bg-gray-800 text-white p-4 rounded-full shadow-lg transition-colors"
               title="Hemen Ara"
             >
               <Phone className="w-6 h-6" />
