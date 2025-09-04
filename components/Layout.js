@@ -16,6 +16,7 @@ export default function Layout({ children, title, description }) {
         <title>
           {title ? `${title} - Çerkezköy Birlik Evden Eve Nakliyat` : "Çerkezköy Birlik Evden Eve Nakliyat - Güvenilir Taşımacılık"}
         </title>
+
         <meta
           name="description"
           content={
@@ -23,8 +24,25 @@ export default function Layout({ children, title, description }) {
             "Çerkezköy Birlik Evden Eve Nakliyat, güvenilir evden eve nakliyat hizmeti. Profesyonel ekip, uygun fiyat, sigortalı taşımacılık."
           }
         />
+        <meta
+          name="keywords"
+          content="Çerkezköy evden eve nakliyat, Birlik nakliyat, Çerkezköy taşımacılık, Çerkezköy ofis taşıma, ev taşıma Çerkezköy, sigortalı nakliye, Tekirdağ evden eve nakliyat, şehirlerarası nakliyat, uygun fiyatlı nakliyat, profesyonel taşımacılık"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
+
+        {/* Open Graph (Facebook / WhatsApp için) */}
+        <meta property="og:title" content="Çerkezköy Birlik Evden Eve Nakliyat" />
+        <meta property="og:description" content="Profesyonel, sigortalı ve uygun fiyatlı evden eve nakliyat hizmeti. Çerkezköy ve çevresinde güvenilir taşımacılık." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://seninsiten.com" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Çerkezköy Birlik Evden Eve Nakliyat" />
+        <meta name="twitter:description" content="Güvenilir ve profesyonel taşımacılık hizmetleri. Çerkezköy’de evden eve nakliye çözümleri." />
+        <meta name="twitter:image" content="/logo.png" />
       </Head>
 
       <div className="min-h-screen bg-gray-50">
@@ -61,13 +79,12 @@ export default function Layout({ children, title, description }) {
           </div>
 
           {/* Main Navigation */}
-          
           <nav className="container mx-auto px-4 py-4">
             <div className="flex justify-between items-center">
               {/* Logo */}
               <Link href="/" className="flex items-center space-x-3 group">
                 <div className="bg-white-900 p-2 rounded-lg group-hover:bg-gray-800 transition-colors">
-                  <Image src="/logo.png" alt="Çerkezköy Birlik Evden Eve Nakliyat" width={100} height={100} />
+                  <Image src="/logo.png" alt="Çerkezköy evden eve nakliyat logo" width={100} height={100} />
                 </div>
                 <div>
                   <h1 className="text-xl font-bold text-gray-900">Çerkezköy Birlik</h1>

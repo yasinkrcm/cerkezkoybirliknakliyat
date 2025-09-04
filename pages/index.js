@@ -171,39 +171,38 @@ export default function Home() {
           name="description"
           content="Çerkezköy ve çevresinde güvenilir evden eve nakliyat hizmeti. Profesyonel ekip, uygun fiyat, sigortalı taşımacılık."
         />
+        <meta
+          name="keywords"
+          content="Çerkezköy nakliyat, Çerkezköy evden eve nakliyat, Çerkezköy taşımacılık, ev taşıma Çerkezköy, ofis taşıma Çerkezköy, sigortalı nakliyat, şehirlerarası nakliyat, acil nakliyat, eşya depolama Çerkezköy, uygun fiyat nakliyat"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <Layout>
         {/* Hero Section */}
-        <section className="bg-white py-16 lg:py-24c">
+        <section className="bg-white py-16 lg:py-24">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
               <div className="space-y-8">
+                {/* H1 – En önemli başlık */}
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Eşyalarınızı Güvenle Taşıyoruz
+                  Çerkezköy Birlik Evden Eve Nakliyat
                 </h1>
 
                 <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
-                  14 yıllık tecrübemiz ve profesyonel ekibimizle evden eve, ofisten ofise nakliyat hizmetlerinde
-                  yanınızdayız. Sigortalı ve güvenli taşımacılık garantisi.
+                  Profesyonel <strong>evden eve nakliyat</strong>, 
+                  <strong> ofis taşıma</strong>, 
+                  <strong> şehirlerarası nakliyat</strong> ve 
+                  <strong> sigortalı taşımacılık</strong> hizmetleriyle Çerkezköy'de güvenilir taşımacılık çözümleri sunuyoruz.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a 
-                    href="tel:+902827264886" 
-                    className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
-                  >
+                  <a href="tel:+902827264886" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center">
                     <Phone className="w-5 h-5 mr-2" />
                     Hemen Ara
                   </a>
-                  <a 
-                    href="https://wa.me/905443298983" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
-                  >
+                  <a href="https://wa.me/905443298983" target="_blank" rel="noopener noreferrer" className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center">
                     <MessageCircle className="w-5 h-5 mr-2" />
                     WhatsApp
                   </a>
@@ -214,7 +213,7 @@ export default function Home() {
               <div>
                 <img
                   src="/Çerkezköy Birlik.jpg"
-                  alt="Profesyonel nakliyat ekibi"
+                  alt="Çerkezköy evden eve nakliyat profesyonel ekibi"
                   className="w-full h-auto rounded-xl shadow-md"
                 />
               </div>
@@ -290,9 +289,15 @@ export default function Home() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Hizmetlerimiz</h2>
+              {/* H2 */}
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                Hizmetlerimiz
+              </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Her türlü nakliyat ihtiyacınız için profesyonel hizmet.
+                Çerkezköy'de <strong>evden eve nakliyat</strong>, 
+                <strong> ofis taşımacılığı</strong>, 
+                <strong> şehirlerarası taşımacılık</strong> ve 
+                <strong> eşya depolama</strong> hizmetleri.
               </p>
             </div>
 
@@ -305,11 +310,10 @@ export default function Home() {
                   <div className="bg-gray-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                     <service.icon className="w-6 h-6 text-gray-600" />
                   </div>
-
+                  {/* H3 */}
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">
                     {service.title}
                   </h3>
-
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">{service.description}</p>
 
                   <ul className="space-y-1 mb-4">
@@ -330,9 +334,13 @@ export default function Home() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Neden Bizi Seçmelisiniz?</h2>
+              {/* H2 */}
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                Neden Çerkezköy Birlik Nakliyat?
+              </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                14 yıllık tecrübemiz ve müşteri memnuniyeti odaklı hizmet anlayışımızla fark yaratıyoruz.
+                14 yıllık tecrübemiz, <strong>sigortalı nakliyat</strong> hizmetimiz ve müşteri memnuniyeti odaklı yaklaşımımız ile 
+                <strong> güvenilir taşımacılık</strong> sunuyoruz.
               </p>
             </div>
 
