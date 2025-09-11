@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.cerkezkoybirlikevdeneve.com/sitemap.xml
+
+# Disallow problematic pages that no longer exist
+Disallow: /biz-kimiz
+Disallow: /sss
+Disallow: /hizmetlerimiz
+Disallow: /hakkimizda
+Disallow: /iletisim
+Disallow: /fiyatlar
+Disallow: /galeri
+Disallow: /blog
+Disallow: /urunler
+Disallow: /kategori
+Disallow: /arama
+Disallow: /admin
+Disallow: /wp-admin
+Disallow: /wp-content
+Disallow: /wp-includes

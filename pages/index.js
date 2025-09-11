@@ -177,6 +177,15 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
+        <link rel="canonical" href="https://www.cerkezkoybirlikevdeneve.com/" />
+        <meta property="og:title" content="Çerkezköy Ev Taşıma | Evden Eve Nakliyat Çerkezköy | Profesyonel Nakliyat" />
+        <meta property="og:description" content="Çerkezköy ev taşıma ve evden eve nakliyat çerkezköy hizmetlerinde profesyonel nakliyat çözümleri. 14 yıllık tecrübe, sigortalı taşımacılık, uygun fiyat garantisi." />
+        <meta property="og:url" content="https://www.cerkezkoybirlikevdeneve.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.cerkezkoybirlikevdeneve.com/Çerkezköy Birlik.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Çerkezköy Ev Taşıma | Evden Eve Nakliyat Çerkezköy | Profesyonel Nakliyat" />
+        <meta name="twitter:description" content="Çerkezköy ev taşıma ve evden eve nakliyat çerkezköy hizmetlerinde profesyonel nakliyat çözümleri. 14 yıllık tecrübe, sigortalı taşımacılık, uygun fiyat garantisi." />
       </Head>
       <Layout>
         {/* Hero Section */}
@@ -356,59 +365,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* SEO Content Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                  Çerkezköy'de Güvenilir Ev Taşıma Hizmetleri
-                </h2>
-                <p className="text-lg text-gray-600">
-                  <strong>Evden eve nakliyat çerkezköy</strong> hizmetlerinde uzman ekibimizle yanınızdayız
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div className="bg-white rounded-xl p-8 shadow-sm">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                    Çerkezköy Ev Taşıma Hizmetlerimiz
-                  </h3>
-                  <div className="space-y-4 text-gray-600">
-                    <p>
-                      <strong>Çerkezköy ev taşıma</strong> hizmetlerimizde eşyalarınızı en güvenli şekilde yeni adresinize taşıyoruz. 
-                      <strong>Evden eve nakliyat çerkezköy</strong> deneyimimizle profesyonel ambalajlama, dikkatli yükleme ve 
-                      güvenli teslimat garantisi sunuyoruz.
-                    </p>
-                    <p>
-                      <strong>Profesyonel nakliyat</strong> ekibimiz, 14 yıllık sektör tecrübesi ile ev eşyalarınızın 
-                      demontajından montajına kadar tüm süreçleri titizlikle yönetir. Sigortalı taşımacılık hizmetimiz 
-                      ile eşyalarınız tam güvence altındadır.
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="bg-white rounded-xl p-8 shadow-sm">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                    Neden Profesyonel Nakliyat Tercih Etmelisiniz?
-                  </h3>
-                  <div className="space-y-4 text-gray-600">
-                    <p>
-                      <strong>Evden eve nakliyat çerkezköy</strong> hizmetlerinde deneyimli ekibimiz, eşyalarınızın 
-                      değerini bilir ve özenle taşır. <strong>Çerkezköy ev taşıma</strong> sürecinde kullanılan 
-                      profesyonel ambalaj malzemeleri ve güvenli taşıma araçları ile hasarsız teslimat garantisi.
-                    </p>
-                    <p>
-                      <strong>Profesyonel nakliyat</strong> hizmetimiz kapsamında ücretsiz keşif, detaylı fiyat teklifi 
-                      ve müşteri memnuniyeti odaklı yaklaşımımızla Çerkezköy'de güvenilir taşımacılık çözümleri sunuyoruz.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
+       
         {/* Contact & Addresses Section */}
         <section id="contact" className="section-padding bg-gradient-to-br from-[#e92323] to-[#420101] text-white">
           <div className="container mx-auto px-4">
@@ -568,6 +525,188 @@ export default function Home() {
             </div>
           </div>
         </section>
+         {/* SEO Content Section */}
+         <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                  Çerkezköy'de Güvenilir Ev Taşıma Hizmetleri
+                </h2>
+                <p className="text-lg text-gray-600">
+                  <strong>Evden eve nakliyat çerkezköy</strong> hizmetlerinde uzman ekibimizle yanınızdayız
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="bg-white rounded-xl p-8 shadow-sm">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                    Çerkezköy Ev Taşıma Hizmetlerimiz
+                  </h3>
+                  <div className="space-y-4 text-gray-600">
+                    <p>
+                      <strong>Çerkezköy ev taşıma</strong> hizmetlerimizde eşyalarınızı en güvenli şekilde yeni adresinize taşıyoruz. 
+                      <strong>Evden eve nakliyat çerkezköy</strong> deneyimimizle profesyonel ambalajlama, dikkatli yükleme ve 
+                      güvenli teslimat garantisi sunuyoruz.
+                    </p>
+                    <p>
+                      <strong>Profesyonel nakliyat</strong> ekibimiz, 14 yıllık sektör tecrübesi ile ev eşyalarınızın 
+                      demontajından montajına kadar tüm süreçleri titizlikle yönetir. Sigortalı taşımacılık hizmetimiz 
+                      ile eşyalarınız tam güvence altındadır.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="bg-white rounded-xl p-8 shadow-sm">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                    Neden Profesyonel Nakliyat Tercih Etmelisiniz?
+                  </h3>
+                  <div className="space-y-4 text-gray-600">
+                    <p>
+                      <strong>Evden eve nakliyat çerkezköy</strong> hizmetlerinde deneyimli ekibimiz, eşyalarınızın 
+                      değerini bilir ve özenle taşır. <strong>Çerkezköy ev taşıma</strong> sürecinde kullanılan 
+                      profesyonel ambalaj malzemeleri ve güvenli taşıma araçları ile hasarsız teslimat garantisi.
+                    </p>
+                    <p>
+                      <strong>Profesyonel nakliyat</strong> hizmetimiz kapsamında ücretsiz keşif, detaylı fiyat teklifi 
+                      ve müşteri memnuniyeti odaklı yaklaşımımızla Çerkezköy'de güvenilir taşımacılık çözümleri sunuyoruz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About Us Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                  Biz Kimiz?
+                </h2>
+                <p className="text-lg text-gray-600">
+                  <strong>Çerkezköy ev taşıma</strong> ve <strong>evden eve nakliyat çerkezköy</strong> hizmetlerinde 14 yıllık deneyim
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div className="bg-gray-50 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Misyonumuz</h3>
+                    <p className="text-gray-600">
+                      <strong>Profesyonel nakliyat</strong> hizmetlerimizle müşterilerimizin eşyalarını en güvenli şekilde 
+                      taşıyarak, <strong>Çerkezköy ev taşıma</strong> sektöründe kalite standartlarını yükseltmek.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-gray-50 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Vizyonumuz</h3>
+                    <p className="text-gray-600">
+                      <strong>Evden eve nakliyat çerkezköy</strong> hizmetlerinde Türkiye'nin en güvenilir ve 
+                      müşteri memnuniyeti odaklı nakliyat firması olmak.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="bg-gray-50 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Değerlerimiz</h3>
+                    <ul className="space-y-3 text-gray-600">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span><strong>Güvenilirlik:</strong> 14 yıllık sektör tecrübesi</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span><strong>Kalite:</strong> Profesyonel ekip ve ekipman</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span><strong>Müşteri Odaklılık:</strong> %100 müşteri memnuniyeti</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span><strong>Şeffaflık:</strong> Açık ve net fiyatlandırma</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                  Sıkça Sorulan Sorular
+                </h2>
+                <p className="text-lg text-gray-600">
+                  <strong>Çerkezköy ev taşıma</strong> hizmetlerimiz hakkında merak ettikleriniz
+                </p>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                    Çerkezköy ev taşıma fiyatları nasıl belirleniyor?
+                  </h3>
+                  <p className="text-gray-600">
+                    <strong>Evden eve nakliyat çerkezköy</strong> fiyatlarımız, taşınacak eşya miktarı, mesafe, 
+                    kat sayısı ve özel gereksinimler gibi faktörlere göre belirlenir. Ücretsiz keşif ile 
+                    size en uygun fiyat teklifini sunuyoruz.
+                  </p>
+                </div>
+                
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                    Eşyalarım sigortalı mı?
+                  </h3>
+                  <p className="text-gray-600">
+                    Evet, tüm eşyalarınız <strong>profesyonel nakliyat</strong> sigortamız kapsamında güvence altındadır. 
+                    Herhangi bir hasar durumunda sigorta tazminatı sağlanır.
+                  </p>
+                </div>
+                
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                    Taşıma süreci nasıl işliyor?
+                  </h3>
+                  <p className="text-gray-600">
+                    <strong>Çerkezköy ev taşıma</strong> sürecimiz: Ücretsiz keşif → Fiyat teklifi → Randevu belirleme → 
+                    Profesyonel ambalajlama → Güvenli taşıma → Yeni adreste montaj şeklinde ilerler.
+                  </p>
+                </div>
+                
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                    Hangi bölgelere hizmet veriyorsunuz?
+                  </h3>
+                  <p className="text-gray-600">
+                    <strong>Evden eve nakliyat çerkezköy</strong> hizmetlerimiz Çerkezköy merkez olmak üzere, 
+                    Tekirdağ, İstanbul ve çevre illere kadar geniş bir coğrafyada sunulmaktadır.
+                  </p>
+                </div>
+                
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                    Acil taşıma hizmeti veriyor musunuz?
+                  </h3>
+                  <p className="text-gray-600">
+                    Evet, 7/24 acil <strong>profesyonel nakliyat</strong> hizmeti sunuyoruz. Acil durumlarınızda 
+                    hemen arayarak hızlı çözüm sağlayabiliriz.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
               </Layout>
 
         {/* Floating Contact Button */}
@@ -592,6 +731,7 @@ export default function Home() {
             </a>
           </div>
         </div>
+        
       </>
     )
   }
