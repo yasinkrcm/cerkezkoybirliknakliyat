@@ -92,17 +92,19 @@ npm run dev
 ```bash
 http://localhost:3000
 ```
-### Build ve Deploy
+# Build ve Deploy
 
 
-# Production build
+### Production build
 ```bash
 npm run build
 ```
-# Production sunucusunu başlat
+### Production sunucusunu başlat
+```bash
 npm run start
 ```
-# Linting
+### Linting
+```bash
 npm run lint
 ```
 
