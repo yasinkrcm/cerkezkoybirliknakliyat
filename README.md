@@ -80,30 +80,28 @@ Bu proje, Çerkezköy Birlik Evden Eve Nakliyat firması için geliştirilmiş m
 git clone [https://github.com/yasinkrcm/cerkezkoybirliknakliyat]
 cd cerkezkoybirliknakliyat
 ```
-
 2. **Bağımlılıkları yükleyin**
 ```bash
 npm install
-
-
+```
 3. **Geliştirme sunucusunu başlatın**
 ```bash
 npm run dev
-
-4. **Tarayıcıda açın**
 ```
+4. **Tarayıcıda açın**
+```bash
 http://localhost:3000
 ```
-
 ### Build ve Deploy
 
-```bash
-# Production build
-npm run build
 
+# Production build
+```bash
+npm run build
+```
 # Production sunucusunu başlat
 npm run start
-
+```
 # Linting
 npm run lint
 ```
