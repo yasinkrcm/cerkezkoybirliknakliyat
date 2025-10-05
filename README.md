@@ -201,9 +201,9 @@ cerkezkoy-nakliyat/
 - **Yaklaşım**: Clean code, performance optimization, user experience
 
 ### İletişim
-- **Portfolio**: [yasinkaracam.codes]
-- **LinkedIn**: [https://www.linkedin.com/in/yasin-karacamm/]
-- **GitHub**: [https://github.com/yasinkrcm/]
+- **Portfolio**: https://www.yasinkaracam.codes
+- **LinkedIn**: https://www.linkedin.com/in/yasin-karacamm/
+- **GitHub**: https://github.com/yasinkrcm/
 
 ---
 
