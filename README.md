@@ -77,7 +77,7 @@ Bu proje, Çerkezköy Birlik Evden Eve Nakliyat firması için geliştirilmiş m
 
 1. **Projeyi klonlayın**
 ```bash
-git clone [https://github.com/yasinkrcm/cerkezkoybirliknakliyat]
+git clone https://github.com/yasinkrcm/cerkezkoybirliknakliyat
 cd cerkezkoybirliknakliyat
 ```
 2. **Bağımlılıkları yükleyin**
