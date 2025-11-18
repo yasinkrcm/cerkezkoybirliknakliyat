@@ -77,34 +77,34 @@ Bu proje, Çerkezköy Birlik Evden Eve Nakliyat firması için geliştirilmiş m
 
 1. **Projeyi klonlayın**
 ```bash
-git clone [https://github.com/yasinkrcm/cerkezkoybirliknakliyat]
+git clone https://github.com/yasinkrcm/cerkezkoybirliknakliyat
 cd cerkezkoybirliknakliyat
 ```
-
 2. **Bağımlılıkları yükleyin**
 ```bash
 npm install
-
-
+```
 3. **Geliştirme sunucusunu başlatın**
 ```bash
 npm run dev
-
-4. **Tarayıcıda açın**
 ```
+4. **Tarayıcıda açın**
+```bash
 http://localhost:3000
 ```
+# Build ve Deploy
 
-### Build ve Deploy
 
+### Production build
 ```bash
-# Production build
 npm run build
-
-# Production sunucusunu başlat
+```
+### Production sunucusunu başlat
+```bash
 npm run start
-
-# Linting
+```
+### Linting
+```bash
 npm run lint
 ```
 
@@ -201,9 +201,9 @@ cerkezkoy-nakliyat/
 - **Yaklaşım**: Clean code, performance optimization, user experience
 
 ### İletişim
-- **Portfolio**: [yasinkaracam.codes]
-- **LinkedIn**: [https://www.linkedin.com/in/yasin-karacamm/]
-- **GitHub**: [https://github.com/yasinkrcm/]
+- **Portfolio**: https://www.yasinkaracam.codes
+- **LinkedIn**: https://www.linkedin.com/in/yasin-karacamm/
+- **GitHub**: https://github.com/yasinkrcm/
 
 ---
 
