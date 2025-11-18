@@ -351,7 +351,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {whyChooseUs.map((item, index) => (
                 <div key={index} className="text-center">
                   <div className="bg-gray-900 w-16 h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -381,7 +381,7 @@ export default function Home() {
                 {/* İletişim Yöntemleri */}
                 <div className="lg:col-span-2">
                   <h3 className="text-2xl font-bold mb-8">İletişim Yöntemlerimiz</h3>
-                  <div className="grid grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                     {contactMethods.map((method, index) => (
                       <div
                         key={index}
@@ -440,7 +440,7 @@ export default function Home() {
               {/* Addresses Section */}
               <div className="mb-16">
                 <h3 className="text-2xl font-bold mb-8 text-center">Adreslerimiz</h3>
-                <div className="grid grid-cols-2 lg:grid-cols-1 gap-4 lg:gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
                   {addresses.map((address, index) => (
                     <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
                       <div className="flex items-center mb-6">
@@ -479,7 +479,7 @@ export default function Home() {
               </div>
 
               {/* Emergency Contact & Bottom CTA - 2x2 on mobile */}
-              <div className="grid grid-cols-2 lg:grid-cols-1 gap-4 lg:gap-8 mb-16">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 mb-16">
                 <div className="bg-red-500/20 border border-red-400/30 rounded-2xl p-4 lg:p-8 text-center hover:bg-red-500/25 transition-all duration-300">
                   <div className="flex items-center justify-center mb-6">
                     <div className="bg-red-500/30 w-16 h-16 rounded-full flex items-center justify-center mr-4">
@@ -709,28 +709,48 @@ export default function Home() {
 
               </Layout>
 
-        {/* Floating Contact Button */}
-        <div className="fixed bottom-6 right-6 z-50">
-          <div className="flex flex-col gap-3">
-            <a
-              href="https://wa.me/905443298983"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-lg transition-colors"
-              title="WhatsApp'tan Mesaj Gönder"
-            >
-              <MessageCircle className="w-6 h-6" />
-            </a>
-            
-            <a
-              href="tel:+902827264886"
-              className="bg-gray-900 hover:bg-gray-800 text-white p-4 rounded-full shadow-lg transition-colors"
-              title="Hemen Ara"
-            >
-              <Phone className="w-6 h-6" />
-            </a>
-          </div>
-        </div>
+      {/* Floating Contact Buttons - Tablet & Desktop */}
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 hidden sm:flex flex-col gap-3">
+        <a
+          href="https://wa.me/905443298983"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-lg transition-colors"
+          title="WhatsApp'tan Mesaj Gönder"
+          aria-label="WhatsApp'tan mesaj gönder"
+        >
+          <MessageCircle className="w-6 h-6" />
+        </a>
+        
+        <a
+          href="tel:+902827264886"
+          className="bg-gray-900 hover:bg-gray-800 text-white p-4 rounded-full shadow-lg transition-colors"
+          title="Hemen Ara"
+          aria-label="Telefon ile ara"
+        >
+          <Phone className="w-6 h-6" />
+        </a>
+      </div>
+
+      {/* Mobile Contact Bar */}
+      <div className="fixed bottom-0 left-0 right-0 bg-gray-900 text-white py-3 px-4 flex items-center justify-center gap-3 sm:hidden z-50 shadow-[0_-4px_12px_rgba(0,0,0,0.1)]">
+        <a
+          href="tel:+902827264886"
+          className="flex items-center justify-center flex-1 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition-colors"
+        >
+          <Phone className="w-5 h-5 mr-2" />
+          Ara
+        </a>
+        <a
+          href="https://wa.me/905443298983"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center flex-1 border border-white/30 hover:bg-white/10 text-white font-semibold py-3 rounded-lg transition-colors"
+        >
+          <MessageCircle className="w-5 h-5 mr-2" />
+          WhatsApp
+        </a>
+      </div>
         
       </>
     )

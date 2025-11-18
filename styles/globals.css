@@ -331,3 +331,9 @@ a {
     @apply py-12;
   }
 }
+
+@media (max-width: 640px) {
+  body {
+    padding-bottom: 80px;
+  }
+}
